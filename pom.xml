@@ -40,6 +40,22 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- START : option 패키지 테스트 -->
+		<dependency>
+			<groupId>commons-cli</groupId>
+			<artifactId>commons-cli</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<!-- 
+		spark-core에 common-cli 포함되어 있다.
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-core_2.11</artifactId>
+			<version>${spark.version}</version>
+		</dependency>
+		-->
+		<!-- END : option 패키지 테스트 -->
 	</dependencies>
 
 	<build>
