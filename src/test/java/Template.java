@@ -19,25 +19,25 @@ public class Template {
 	
 	@Test
 	public void test1_Classic() {
-		log.info(CommonConst.title, "testClassic");
+		log.info(CommonConst.title, "test1_Classic");
 		log.info(CommonConst.line);
 	}
 	
 	@Test
 	public void test2_(){
-		log.info(CommonConst.title, "test1");
+		log.info(CommonConst.title, "test2_");
 		log.info(CommonConst.line);
 	}
 	
 	@Test
 	public void test3_(){
-		log.info(CommonConst.title, "test2");
+		log.info(CommonConst.title, "test3_");
 		log.info(CommonConst.line);
 	}
 	
 	@Test
 	public void test4_(){
-		log.info(CommonConst.title, "test3");
+		log.info(CommonConst.title, "test4_");
 		log.info(CommonConst.line);
 	}
 }
