@@ -40,4 +40,16 @@ public class Template {
 		log.info(CommonConst.title, "test4_");
 		log.info(CommonConst.line);
 	}
+	
+	@Test
+	public void test5_(){
+		log.info(CommonConst.title, "test5_");
+		log.info(CommonConst.line);
+	}
+	
+	@Test
+	public void test6_(){
+		log.info(CommonConst.title, "test6_");
+		log.info(CommonConst.line);
+	}
 }
