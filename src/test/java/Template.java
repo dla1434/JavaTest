@@ -47,9 +47,34 @@ public class Template {
 		log.info(CommonConst.line);
 	}
 	
+	
 	@Test
 	public void test6_(){
 		log.info(CommonConst.title, "test6_");
+		log.info(CommonConst.line);
+	}
+	
+	@Test
+	public void test7_(){
+		log.info(CommonConst.title, "test7_");
+		log.info(CommonConst.line);
+	}
+	
+	@Test
+	public void test8_(){
+		log.info(CommonConst.title, "test8_");
+		log.info(CommonConst.line);
+	}
+	
+	@Test
+	public void test9_(){
+		log.info(CommonConst.title, "test9_");
+		log.info(CommonConst.line);
+	}
+	
+	@Test
+	public void test10_(){
+		log.info(CommonConst.title, "test10_");
 		log.info(CommonConst.line);
 	}
 }

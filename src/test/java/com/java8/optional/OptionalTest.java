@@ -108,14 +108,25 @@ public class OptionalTest {
 	}
 	
 	@Test
-	public void test8_OptionalifPresent(){
-		log.info(CommonConst.title, "test7_OptionalifPresent");
+	public void test8_OptionalorElse(){
+		log.info(CommonConst.title, "test8_OptionalorElse");
+		Optional<String> gender = Optional.of("MALE");
+		Optional<String> emptyGender = Optional.empty();
+
+		System.out.println(gender.orElse("<N/A>"));					// MALE
+		System.out.println(emptyGender.orElse("<N/A>"));			// <N/A>
+
 		log.info(CommonConst.line);
 	}
 	
 	@Test
-	public void test9_OptionalifPresent(){
-		log.info(CommonConst.title, "test7_OptionalifPresent");
+	public void test9_OptionalorElseGet(){
+		log.info(CommonConst.title, "test9_OptionalorElseGet");
+		Optional<String> gender = Optional.of("MALE");
+		Optional<String> emptyGender = Optional.empty();
+		
+		System.out.println(gender.orElseGet(() -> "<N/A>"));		// MALE
+		System.out.println(emptyGender.orElseGet(() -> "<N/A>"));	// <N/A>
 		log.info(CommonConst.line);
 	}
 	
