@@ -1,3 +1,4 @@
+package com.java8.date;
 
 
 import org.junit.Before;
@@ -46,6 +47,7 @@ public class Template {
 		log.info(CommonConst.title, "test5_");
 		log.info(CommonConst.line);
 	}
+	
 	
 	@Test
 	public void test6_(){

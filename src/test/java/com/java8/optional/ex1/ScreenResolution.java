@@ -1,4 +1,4 @@
-package com.java8.optional.case1;
+package com.java8.optional.ex1;
 
 public class ScreenResolution {
 

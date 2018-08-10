@@ -1,4 +1,8 @@
+package com.java8.date.localdate;
 
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import org.junit.Before;
 import org.junit.FixMethodOrder;
@@ -11,7 +15,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class Template {
+public class LocalDateTimeTest {
 	@Before
 	public void init(){
 		
@@ -24,14 +28,28 @@ public class Template {
 	}
 	
 	@Test
-	public void test2_(){
-		log.info(CommonConst.title, "test2_");
+	public void test2_LocalDateTime_DateTimeFormatter(){
+		log.info(CommonConst.title, "test2_LocalDateTime_DateTimeFormatter");
+		// Get current date time
+		LocalDateTime now = LocalDateTime.now();
+		System.out.println("Before : " + now);				//Before : 2016-11-09T11:44:44.797
+
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+		String formatDateTime =now .format(formatter);
+		System.out.println("After : " + formatDateTime);	//After  : 2016-11-09 11:44:44
 		log.info(CommonConst.line);
 	}
 	
 	@Test
-	public void test3_(){
+	public void test3_StringToLocalDateTime(){
 		log.info(CommonConst.title, "test3_");
+		String now = "2016-11-09 10:30";
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+		LocalDateTime formatDateTime = LocalDateTime.parse(now, formatter);
+		System.out.println("Before : " + now);								//Before : 2016-11-09 10:30
+
+		System.out.println("After : " + formatDateTime);					//After(LocalDateTime)  : 2016-11-09T10:30
+		System.out.println("After : " + formatDateTime.format(formatter));	//After(String) 		: 2016-11-09 10:30
 		log.info(CommonConst.line);
 	}
 	
@@ -46,6 +64,7 @@ public class Template {
 		log.info(CommonConst.title, "test5_");
 		log.info(CommonConst.line);
 	}
+	
 	
 	@Test
 	public void test6_(){
