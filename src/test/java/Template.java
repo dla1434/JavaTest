@@ -5,7 +5,7 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
-import com.java.test.consts.CommonConst;
+import javaOld.consts.CommonConst;
 
 import lombok.extern.slf4j.Slf4j;
 
