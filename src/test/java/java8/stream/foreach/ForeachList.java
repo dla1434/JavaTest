@@ -1,7 +1,7 @@
 package java8.stream.foreach;
 
 
-import javaOld.consts.CommonConst;
+import common.consts.CommonConst;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;
